@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="//cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+        <script src="stomp.js"></script>
+    </head>
+    <body>
+        <h1>Hello World1!</h1>
+
+        <table>
+            <tr>
+                <td>
+                    <canvas id="myCanvas" width="150" height="150" style="border:1px solid #000000;"></canvas>
+                </td>
+                <td>
+                    <form name="inputForm">
+                        <table>
+
+                            <tr>
+                                <th>Color</th>
+                                <td><input type="radio" name="color" value="#FF0000" checked="checked">Red</td>
+                                <td><input type="radio" name="color" value="#0000FF">Blue</td>
+                                <td><input type="radio" name="color" value="#FF9900">Orange</td>
+                                <td><input type="radio" name="color" value="#33CC33">Green</td>
+                            </tr>
+
+                            <tr>
+                                <th>Shape</th>
+                                <td><input type="radio" name="shape" value="square" checked="checked">Square</td>
+                                <td><input type="radio" name="shape" value="circle">Circle</td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        
+        <p><input id="changeLocationButton" type="button" value="Отправить"></p>
+
+        <p><textarea id="message" rows="10" cols="45" name="text"></textarea></p>
+        <p><input id="sendButton" type="button" value="Отправить"></p>
+
+        <div id="output">
+
+        </div>
+
+
+        <script type="text/javascript" src="websocket.js"></script>
+        <script type="text/javascript" src="whiteboard.js"></script>
+    </body>
+</html>
